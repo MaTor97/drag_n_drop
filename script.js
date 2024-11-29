@@ -35,10 +35,10 @@ function stopDrag() {
     document.removeEventListener('mouseup', stopDrag);
 }
 
-function setTranslate(xPos, yPos, el) {
-    el.style.transform = `translate(${xPos}px, ${yPos}px)`;
+function setTranslate(xPos, yPos, element) {
+    element.style.transform = `translate(${xPos}px, ${yPos}px)`;
 }
 
 function updateOffsetsDisplay(xPos, yPos) {
-    offsetsDisplay.textContent = `OffsetX: ${xPos}, OffsetY: ${yPos}`;
+    offsetsDisplay.textContent = `X: ${xPos} Y: ${yPos}`;
 }

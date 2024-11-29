@@ -9,6 +9,7 @@ body {
     background-size: 20px 20px; 
     height: 100vh;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -16,10 +17,7 @@ h1 {
         top: 50px;
         left: 50%;
     transform: translateX(-50%);
-    font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-    color: blue;
-    text-decoration: underline;
 }
 
 #box {
@@ -29,16 +27,22 @@ h1 {
     z-index: 1;
     width: 222px;
     height: 222px;
-    border: 1px solid red;
-    border-radius: 50%;
-    background-color: white;
+    border: 1px solid rgb(5, 5, 5);
+    border-radius: 45%;
+    background-color: rgba(14, 180, 130, 0.5);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+#box:hover {
+    cursor: grab;
 }
 
 .offsets { 
     position: absolute; 
-    background-color: white; 
-    border: 1px solid red; 
     padding: 5px; 
-    font-size: 12px; 
+    font-size: 18px; 
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(255, 68, 12, 0.5);
 }
+
